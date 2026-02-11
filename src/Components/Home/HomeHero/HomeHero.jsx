@@ -15,7 +15,7 @@ const HomeHero = () => {
       <div className="hero-container">
         <div className="hero-badge">
           <span className="badge-icon">⚡</span>
-          <span>PAKISTAN'S TOP MICROSOFT CSP TIER-1 DIRECT PARTNER</span>
+          <span>PAKISTAN'S TOP Reselling Brand</span>
         </div>
         
         <h1 className="hero-title">
