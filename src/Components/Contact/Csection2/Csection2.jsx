@@ -10,7 +10,7 @@ const Csection2 = () => {
       imgSrc: technicalSupport,
       title: "Technical Support",
       buttonText: "Create a Ticket",
-      link: "https://support.itcs.com.pk/?_gl=1*1k28ai4*_ga*NzQyNDA5Njg4LjE3MzQ2MDk0MTY.*_ga_7DHSEEDY6N*MTczNzAwMTU3Ni40Mi4xLjE3MzcwMDE2MDEuMC4wLjA.",
+      link: "https://support.ict.com.pk/?_gl=1*1k28ai4*_ga*NzQyNDA5Njg4LjE3MzQ2MDk0MTY.*_ga_7DHSEEDY6N*MTczNzAwMTU3Ni40Mi4xLjE3MzcwMDE2MDEuMC4wLjA.",
     },
     {
       imgSrc: phoneIcon,
@@ -21,8 +21,8 @@ const Csection2 = () => {
     {
       imgSrc: mailIcon,
       title: "Mail Us 24/7",
-      buttonText: "info@itcs.com.pk",
-      link: "mailto:info@itcs.com.pk",
+      buttonText: "info@ict.com.pk",
+      link: "mailto:info@ict.com.pk",
     },
   ];
 

@@ -34,7 +34,7 @@ const ContactForm = () => {
     {
       icon: faEnvelope,
       title: "Email Us",
-      description: "info@itcs.com.pk\nsupport@itcs.com.pk"
+      description: "info@ict.com.pk\nsupport@ict.com.pk"
     },
     {
       icon: faPhone,

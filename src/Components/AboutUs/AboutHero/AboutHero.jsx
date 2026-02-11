@@ -12,7 +12,7 @@ const AboutHero = () => {
         <div className="gradient-orb orb-2"></div>
       </div>
       <div className="hero-content">
-        <span className="hero-badge">ABOUT ITCS</span>
+        <span className="hero-badge">ABOUT ICT</span>
         <h1 className="hero-title">
           Innovating Technology, <br />
           <span className="gradient-text">Empowering Business</span>

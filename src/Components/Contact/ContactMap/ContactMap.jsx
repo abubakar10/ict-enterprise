@@ -9,19 +9,19 @@ const ContactMap = () => {
       city: "Karachi",
       address: "6/K Block 2, P.E.C.H.S, Karachi, Pakistan",
       phone: "021 111-482-711",
-      email: "karachi@itcs.com.pk"
+      email: "karachi@ict.com.pk"
     },
     {
       city: "Lahore",
       address: "Office No. 32, 1st Floor, I.T Tower 73-E/1، Hali Rd, Block A Gulberg III Lahore, Pakistan",
       phone: "042 378-74358   ",
-      email: "lahore@itcs.com.pk"
+      email: "lahore@ict.com.pk"
     },
     {
       city: "Islamabad",
       address: "Office # 14, Ground Floor, Malik Plaza  F-8 Markaz, Islamabad",
       phone: "+92 51 2744956",
-      email: "islamabad@itcs.com.pk"
+      email: "islamabad@ict.com.pk"
     }
   ];
 

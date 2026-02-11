@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useMsal } from '@azure/msal-react'
 import { loginRequest } from '../../config/msalConfig'
-import alignitLogo from '../../assets/logos/itcsLogo.png'
+import alignitLogo from '../../assets/logos/ictLogo.png'
 import './Login.scss'
 
 const Login = () => {
@@ -88,7 +88,7 @@ const Login = () => {
       <div className="login-container">
         <div className="login-card">
           <div className="card-header">
-            <img src={alignitLogo} alt="ITCS Logo" className="login-logo" />
+            <img src={alignitLogo} alt="ICT Logo" className="login-logo" />
             <p className="card-subtitle">Log in to access your dashboard</p>
           </div>
 

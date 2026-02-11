@@ -96,8 +96,8 @@
         height: 48px;
         object-fit: contain;
         transition: all var(--transition-normal);
-        // Make icons white for visibility on light blue background
-        filter: brightness(0) invert(1);
+        // Accent blue so icons are visible on light blue background
+        filter: brightness(0) saturate(100%) invert(55%) sepia(98%) saturate(1000%) hue-rotate(197deg);
         opacity: 1;
         display: block;
         flex-shrink: 0;

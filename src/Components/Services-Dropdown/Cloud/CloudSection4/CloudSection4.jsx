@@ -20,9 +20,9 @@ const CloudSection4 = () => {
           <img src={CloudSection4Img} alt="" />
         </div>
         <div className="cloudSection4Info">
-          <h2>Why Choose ITCS for Your Cloud Journey?</h2>
+          <h2>Why Choose ICT for Your Cloud Journey?</h2>
           <p>
-            ITCS is Microsoft Gold Partner and value-added reseller working as
+            ICT is Microsoft Gold Partner and value-added reseller working as
             Microsoft Cloud Service Provider (CSP – Tier 1) in Pakistan. We have
             a qualified team with Microsoft-certified trainers and professional
             industry experts to help you deploy Microsoft Azure in your business

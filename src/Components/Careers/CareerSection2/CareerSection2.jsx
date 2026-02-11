@@ -31,10 +31,10 @@ const CareerSection2 = () => {
             <p>
               The recruitment process begins with the submission of CVs,
               followed by phone screening, assessment, and a final interview. At
-              ITCS, we believe in working together and working hard.
+              ICT, we believe in working together and working hard.
             </p>
             <p>
-              Discover the difference of working at ITCS – where your career
+              Discover the difference of working at ICT – where your career
               takes flight, and your work is more than just a job; it's a
               fulfilling journey.
             </p>

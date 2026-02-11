@@ -11,7 +11,7 @@ const ITSection4 = () => {
         </div>
         <div className="right-content">
           <p>
-            We at ITCS are dedicated to empowering organizations to reach their fullest potential
+            We at ICT are dedicated to empowering organizations to reach their fullest potential
             through technology. Our range of expert IT services includes technical support, network
             management, data backup and recovery, cloud services, cybersecurity, IT consulting, and
             managed IT services.
@@ -20,7 +20,7 @@ const ITSection4 = () => {
             Our goal is to provide expertise and support in areas such as hardware and software
             troubleshooting, network design and maintenance, and data protection. By leveraging our
             knowledge and resources, organizations can improve their operations, reduce costs, and
-            stay ahead of the competition. Trust ITCS to be your partner in technology success.
+            stay ahead of the competition. Trust ICT to be your partner in technology success.
           </p>
         </div>
       </div>

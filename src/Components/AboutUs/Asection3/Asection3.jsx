@@ -1,6 +1,6 @@
 import React from "react";
 import "./Asection3.scss";
-import companyProfile from "./../../../assets/images/ITCS-Company-Profile.png";
+import companyProfile from "./../../../assets/images/ICT-Company-Profile.png";
 import openCompanyProfile from "./../../../assets/images/open-company profile.png";
 import { Link } from "react-router-dom";
 

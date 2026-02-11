@@ -1,6 +1,6 @@
 // import React, { useState, useEffect } from 'react'
 // import { useNavigate } from 'react-router-dom'
-// import alignitLogo from '../../assets/logos/itcsLogo.png'
+// import alignitLogo from '../../assets/logos/ictLogo.png'
 // import './Signup.scss'
 
 
@@ -91,7 +91,7 @@
 //       <div className="signup-container">
 //         <div className="signup-card">
 //           <div className="card-header">
-//             <img src={alignitLogo} alt="ITCS Logo" className="logo" />
+//             <img src={alignitLogo} alt="ICT Logo" className="logo" />
 //             <h1 className="card-title">Create Your Account</h1>
 //           </div>
 //           <form className="signup-form" onSubmit={handleSubmit}>

@@ -48,7 +48,7 @@ const Vsection2 = () => {
             <h5>OUR NORTHSTAR</h5>
             <h2>ISLAMIC IDEOLOGY</h2>
             <p>
-              We, at ITCS, steadfastly adhere to the principles of Islam in our
+              We, at ICT, steadfastly adhere to the principles of Islam in our
               dealings. We shall never resort to bribery, falsehoods, deceit, or
               the allure of interest. Our commitment to honest dealings knows no
               compromise. From our very inception, we have held these principles

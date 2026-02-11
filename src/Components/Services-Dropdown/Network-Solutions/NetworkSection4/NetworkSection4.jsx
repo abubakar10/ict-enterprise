@@ -12,13 +12,13 @@ const NetworkSection4 = () => {
           <div className="right-content">
             <p>
               <strong>Connectivity:</strong> Enhance collaboration through expert consultation,
-              advanced tech, and scalable solutions. ITCS ensures seamless
+              advanced tech, and scalable solutions. ICT ensures seamless
               operations, weaving a strong network to unite your endeavors. <br />
-              <strong>Efficiency:</strong>  Streamlined workflows, optimized performance – ITCS
+              <strong>Efficiency:</strong>  Streamlined workflows, optimized performance – ICT
               cultivates operational efficiency with cutting-edge solutions,
               data analytics, and informed decision-making, propelling your
               achievements. <br />
-              <strong>Security:</strong>  Entrust your data to ITCS for fortified
+              <strong>Security:</strong>  Entrust your data to ICT for fortified
               protection. With managed security and a skilled team, navigate the
               digital realm with confidence, knowing your network remains
               resilient against cyber threats.

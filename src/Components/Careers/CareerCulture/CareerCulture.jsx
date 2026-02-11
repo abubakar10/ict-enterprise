@@ -29,7 +29,7 @@ const CareerCulture = () => {
             <span className="section-badge">OUR CULTURE</span>
             <h2>Where Innovation Meets Collaboration</h2>
             <p className="lead-text">
-              At ITCS, we've built a culture that celebrates diversity, encourages innovation, 
+              At ICT, we've built a culture that celebrates diversity, encourages innovation, 
               and supports personal growth. Join a team that values your ideas and invests in your future.
             </p>
             <div className="values-list">
@@ -66,7 +66,7 @@ const CareerCulture = () => {
             <div className="culture-quote">
               <div className="quote-icon">"</div>
               <p>
-                "ITCS has been an incredible place to grow my career. The support from leadership 
+                "ICT has been an incredible place to grow my career. The support from leadership 
                 and the collaborative environment make every day rewarding."
               </p>
               <div className="quote-author">

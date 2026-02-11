@@ -14,7 +14,7 @@ export default function BlogApproval() {
   const [currentPage, setCurrentPage] = useState(1);
   const blogsPerPage = 9;
 
-  const organization = "itcs11";
+  const organization = "ict11";
   const backendUrl = API_URL;
 
   // Fetch all Dev.to blogs

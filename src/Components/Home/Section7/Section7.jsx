@@ -6,10 +6,10 @@ const Section7 = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const testimonials = [
-    { title: "The SindClub", role:"ManagerIT", text: "“The ITCS support team is awesome. They are very professional and never hesitate to above and beyond to satisfy us. Keep up the good work!”" },
-    { title: "Brands of the year Awards", role:"CEO", text: "“Our migration to the cloud via Office 365 was made very simple by ITCS.  Excellent service and courteous staff!”" },
+    { title: "The SindClub", role:"ManagerIT", text: "“The ICT support team is awesome. They are very professional and never hesitate to above and beyond to satisfy us. Keep up the good work!”" },
+    { title: "Brands of the year Awards", role:"CEO", text: "“Our migration to the cloud via Office 365 was made very simple by ICT.  Excellent service and courteous staff!”" },
     { title: "Getz Pharma", role:"ManagerIT", text: "“I have no words to say thanks because from one strange call for IT support from my colleague, you provided highly technical support and spent almost full day to restore our IT services running on domain environment.”" },
-    { title: "The SindClub", role:"ManagerIT", text: "“The ITCS support team is awesome. They are very professional and never hesitate to above and beyond to satisfy us. Keep up the good work!”" },
+    { title: "The SindClub", role:"ManagerIT", text: "“The ICT support team is awesome. They are very professional and never hesitate to above and beyond to satisfy us. Keep up the good work!”" },
   
   ];
 

@@ -15,38 +15,44 @@ const HomeSolutions = () => {
     {
       logo: cloud,
       title: "Cloud",
-      description: "Unlock Business 4.0 with our Microsoft Cloud partnership for a smooth edge-to-cloud transformation",
+      description: "Accelerate with Microsoft Cloud—Azure, M365, and seamless edge-to-cloud adoption for the modern enterprise.",
       path: "/services/cloud",
+      color: "#4a9eff",
     },
     {
       logo: cybersecurity,
-      title: "Cyber-security",
-      description: "Cybersecurity: a growth imperative in today's expanding digital threat landscape.",
+      title: "Cybersecurity",
+      description: "Turn risk into resilience with proactive security, compliance, and a defense-ready posture.",
       path: "/services/cyber-security",
+      color: "#6366f1",
     },
     {
       logo: consulting,
       title: "Consulting",
-      description: "Thrive amidst change with a transformative strategy centered on purpose.",
+      description: "Navigate change with strategy that puts purpose, innovation, and sustainable growth at the center.",
       path: "/services/consulting",
+      color: "#8b5cf6",
     },
     {
       logo: enterpriseSol,
       title: "Enterprise Solutions",
-      description: "Transform your business with intelligent solutions and a holistic approach to enterprise applications.",
+      description: "Connect people, data, and processes with intelligent applications and a holistic approach.",
       path: "/services/enterprise-solutions",
+      color: "#3d8eef",
     },
     {
       logo: itServices,
       title: "IT Services",
-      description: "Expert managed IT services for smooth and efficient technology operations.",
+      description: "Keep operations running smoothly with expert managed IT, support, and technology operations.",
       path: "/services/it-services",
+      color: "#667eea",
     },
     {
       logo: networkSolutions,
       title: "Network Solutions",
-      description: "Optimize network performance and security with our comprehensive network solutions.",
+      description: "Optimize performance and security with end-to-end network design, monitoring, and support.",
       path: "/services/network-solutions",
+      color: "#0ea5e9",
     },
   ];
 
@@ -54,38 +60,40 @@ const HomeSolutions = () => {
     <section className="home-solutions">
       <div className="solutions-container">
         <div className="solutions-header">
-          <span className="section-badge">WHY CHOOSE US</span>
-          <h2 className="section-title">13+ Years of Industry Experience</h2>
+          <span className="section-badge">OUR EXPERTISE</span>
+          <h2 className="section-title">Solutions That Scale With You</h2>
           <p className="section-description">
-            We uphold the virtues of superior functional resources and excellent 
-            customer services with the prime objective of fostering value enablement 
-            systems, since 2011. By deploying problem-focused and solution-centered 
-            approaches with functional expertise and strategic partnerships with Tier 1 
-            firms, we ensure customer success.
+            From cloud and security to consulting and infrastructure, we deliver
+            outcome-focused solutions backed by over a decade of experience and
+            partnerships with leading technology providers.
           </p>
         </div>
 
         <div className="solutions-grid">
           {solutions.map((solution, index) => (
-            <div className="solution-card" key={index}>
-              <div className="card-inner">
-                <div className="card-front">
-                  <div className="card-icon">
-                    <img src={solution.logo} alt={solution.title} />
-                  </div>
-                  <h3 className="card-title">{solution.title}</h3>
-                  <p className="card-description">{solution.description}</p>
-                </div>
-                <div className="card-back">
-                  <button 
-                    className="explore-btn"
-                    onClick={() => navigate(solution.path)}
-                  >
-                    <span>Explore {solution.title}</span>
-                    <span className="btn-arrow">→</span>
-                  </button>
-                </div>
+            <div
+              className="solution-card"
+              key={index}
+              style={{ "--card-color": solution.color, "--i": index }}
+              onClick={() => navigate(solution.path)}
+            >
+              <div className="card-glow" aria-hidden="true" />
+              <div className="card-icon">
+                <img src={solution.logo} alt={solution.title} />
               </div>
+              <h3 className="card-title">{solution.title}</h3>
+              <p className="card-description">{solution.description}</p>
+              <button
+                type="button"
+                className="card-link"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  navigate(solution.path);
+                }}
+              >
+                Explore {solution.title}
+                <span className="link-arrow">→</span>
+              </button>
             </div>
           ))}
         </div>
@@ -95,4 +103,3 @@ const HomeSolutions = () => {
 };
 
 export default HomeSolutions;
-

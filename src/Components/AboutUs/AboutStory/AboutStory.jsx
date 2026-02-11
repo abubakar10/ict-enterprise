@@ -10,7 +10,7 @@ const AboutStory = () => {
           <span className="section-badge">OUR STORY</span>
           <h2>Building the Future Since 2000</h2>
           <p className="lead-text">
-            ITCS was founded with a simple yet powerful vision: to bridge the gap between 
+            ICT was founded with a simple yet powerful vision: to bridge the gap between 
             businesses and technology. What started as a small IT services company has grown 
             into a comprehensive technology solutions provider.
           </p>
@@ -40,7 +40,7 @@ const AboutStory = () => {
         </div>
         <div className="story-image">
           <div className="image-wrapper">
-            <img src={aboutImage} alt="About ITCS" />
+            <img src={aboutImage} alt="About ICT" />
             <div className="image-decoration"></div>
           </div>
         </div>

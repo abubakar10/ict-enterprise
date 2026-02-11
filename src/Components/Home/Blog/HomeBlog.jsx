@@ -8,7 +8,7 @@ export default function Blog() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const organization = "itcs11";
+  const organization = "ict11";
   const backendUrl = API_URL;
 
   useEffect(() => {

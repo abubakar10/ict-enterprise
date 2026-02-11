@@ -80,9 +80,9 @@ const Asection6 = () => {
   return (
     <div className="asection6">
       <div className="core-values-text">
-        <h6>LIFE AT ITCS</h6>
+        <h6>LIFE AT ICT</h6>
         <h2>Our Core Values</h2>
-        <p>ITCS: Anchored by Six Core Values, We Forge a Path to Excellence.</p>
+        <p>ICT: Anchored by Six Core Values, We Forge a Path to Excellence.</p>
       </div>
       {/* Navigation */}
       <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">

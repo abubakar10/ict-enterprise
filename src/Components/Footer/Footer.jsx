@@ -1,5 +1,5 @@
 import React from 'react';
-import itcsLogo from "../../assets/logos/itcsLogo.png";
+import ictLogo from "../../assets/logos/ictLogo.png";
 import Twitter from "./../../assets/logos/Twitter.svg";
 import Facebook from "./../../assets/logos/Facebook.svg";
 import Instagram from "./../../assets/logos/Instagram.svg";
@@ -15,18 +15,18 @@ const Footer = () => {
         {/* Logo & Intro Section */}
         <div className="logo-section">
           <a href="/" className="logo-link">
-            <img src={itcsLogo} alt="ITCS Logo" className="itcs-logo" />
+            <img src={ictLogo} alt="ICT Logo" className="ict-logo" />
           </a>
           <p className="intro-para">
-            ITCS strives to provide its customers with the best possible
+            ICT strives to provide its customers with the best possible
             solutions using the latest available technology.
           </p>
-          <div className="social-icons">
+          {/* <div className="social-icons">
             <a href="#" className="icon twitter" aria-label="Twitter">
               <img src={Twitter} alt="Twitter" />
             </a>
             <a
-              href="https://www.facebook.com/itcspakistan"
+              href="https://www.facebook.com/ictpakistan"
               target="_blank"
               rel="noopener noreferrer"
               className="icon facebook"
@@ -35,7 +35,7 @@ const Footer = () => {
               <img src={Facebook} alt="Facebook" />
             </a>
             <a
-              href="https://www.instagram.com/itcs.pakistan"  // Update with real link if available
+              href="https://www.instagram.com/ict.pakistan"  // Update with real link if available
               target="_blank"
               rel="noopener noreferrer"
               className="icon instagram"
@@ -52,20 +52,20 @@ const Footer = () => {
             >
               <img src={LinkedIn} alt="LinkedIn" />
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* Head Office Info */}
         <div className="info-section">
           <h3>Head Office</h3>
-          <p className="head-para">6/K Block 2, P.E.C.H.S, Karachi, Pakistan</p>
+          <p className="head-para">Blue Area Islamabad, Pakistan</p>
           <p className="head-para">
-            <a href="mailto:info@itcs.com.pk">info@itcs.com.pk</a>
+            <a href="mailto:info@ictsolutions.com.pk">info@ictsolutions.com.pk</a>
           </p>
           <p className="head-para">
-            <a href="tel:+9221111482711">Phone: 021 111-482-711</a>
+            <a href="tel:+9221111482711">Phone: 12345679</a>
           </p>
-          <p className="head-para">Fax: 021 4554818</p>
+          {/* <p className="head-para">Fax: 021 4554818</p> */}
         </div>
 
         {/* Services Links */}
@@ -85,7 +85,7 @@ const Footer = () => {
       {/* Optional: Copyright Line */}
       <div className="footer-bottom">
         <p style={{ color: 'rgba(255, 255, 255, 0.7)', textAlign: 'center', paddingTop: '20px', fontSize: '14px' }}>
-          &copy; {new Date().getFullYear()} ITCS Pakistan. All rights reserved.
+          &copy; {new Date().getFullYear()} ICT Pakistan. All rights reserved.
         </p>
       </div>
     </footer>

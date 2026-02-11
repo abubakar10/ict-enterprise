@@ -9,7 +9,7 @@ const ITSection3 = () => {
         <div className="consultingSection3-text">
           <h6>Empowering Excellence in Technology:</h6>
           <h2>
-            ITCS – Your Partner for Expert Support in Hardware, Software,
+            ICT – Your Partner for Expert Support in Hardware, Software,
             Networks, and Data Protection
           </h2>
 

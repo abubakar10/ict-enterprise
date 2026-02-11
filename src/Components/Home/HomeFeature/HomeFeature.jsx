@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomeFeature.scss";
 import { Link } from 'react-router-dom'
-import Section3img from "./../../../assets/images/section3.jpg";
+import Section3img from "./../../../assets/images/section3.webp";
 
 const HomeFeature = () => {
   const features = [
