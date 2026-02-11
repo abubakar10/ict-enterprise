@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { API_URL } from "../../../config/apiConfig";
 import "./CareerPositions.scss";
 
 const CareerPositions = () => {
@@ -24,7 +25,7 @@ const CareerPositions = () => {
     const loadJobs = async () => {
       setLoading(true);
       try {
-        const res = await axios.get("http://localhost:5000/api/jobsAdd");
+        const res = await axios.get(`${API_URL}/api/jobsAdd`);
         setPositions(Array.isArray(res.data) ? res.data : []);
       } catch (err) {
         console.error("Error loading jobs:", err);

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { API_URL } from '../../../config/apiConfig';
 import './PostJob.scss';
 
 const PostJob = () => {
@@ -38,7 +39,7 @@ const PostJob = () => {
     try {
       setLoading(true);
       // Change POST URL to match the new route
-      const res = await axios.post('http://localhost:5000/api/jobsAdd', formData);
+      const res = await axios.post(`${API_URL}/api/jobsAdd`, formData);
       setSuccess('Job posted successfully!');
 
       setFormData({
