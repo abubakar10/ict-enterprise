@@ -47,12 +47,12 @@ const HomeHero = () => {
           </div>
           <div className="stat-divider"></div>
           <div className="stat-item">
-            <div className="stat-number">497+</div>
+            <div className="stat-number">100+</div>
             <div className="stat-label">Satisfied Clients</div>
           </div>
           <div className="stat-divider"></div>
           <div className="stat-item">
-            <div className="stat-number">954+</div>
+            <div className="stat-number">150+</div>
             <div className="stat-label">Projects Completed</div>
           </div>
         </div>

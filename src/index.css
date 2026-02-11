@@ -4,31 +4,34 @@
 }
 
 :root {
-  /* Dark Theme Colors */
-  --bg-primary: #1a1a1a;
-  --bg-secondary: #242424;
-  --bg-tertiary: #2d2d2d;
-  --bg-card: #1f1f1f;
+  /* Light Theme Colors - White Background */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #f0f4f8;
+  --bg-card: #ffffff;
   
   /* Text Colors */
-  --text-primary: #ffffff;
-  --text-secondary: #b8b8b8;
-  --text-muted: #888888;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
   
-  /* Accent Colors */
+  /* Accent Colors - Light Blue and Green */
   --accent-blue: #4a9eff;
+  --accent-blue-light: #e6f2ff;
   --accent-blue-hover: #3d8eef;
-  --accent-blue-light: rgba(74, 158, 255, 0.1);
-  --accent-gradient: linear-gradient(135deg, #667eea 0%, #4a9eff 100%);
+  --accent-green: #48bb78;
+  --accent-green-light: #e6ffed;
+  --accent-blue-light-bg: rgba(74, 158, 255, 0.1);
+  --accent-gradient: linear-gradient(135deg, #4a9eff 0%, #48bb78 100%);
   
   /* Border Colors */
-  --border-color: rgba(255, 255, 255, 0.1);
-  --border-hover: rgba(255, 255, 255, 0.2);
+  --border-color: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(74, 158, 255, 0.3);
   
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
   
   /* Transitions */
   --transition-fast: 0.2s ease;
@@ -82,7 +85,7 @@ html {
 
 /* Common Button Styles */
 .btn-primary {
-  background: var(--accent-gradient);
+  background: var(--accent-blue);
   color: white;
   border: none;
   padding: 12px 32px;
@@ -91,12 +94,13 @@ html {
   font-weight: 600;
   cursor: pointer;
   transition: all var(--transition-normal);
-  box-shadow: 0 4px 12px rgba(74, 158, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(74, 158, 255, 0.25);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(74, 158, 255, 0.4);
+  box-shadow: 0 6px 20px rgba(74, 158, 255, 0.35);
+  background: var(--accent-blue-hover);
 }
 
 .btn-secondary {

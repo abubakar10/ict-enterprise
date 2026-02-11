@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { API_URL } from "../../config/apiConfig";
 import "./Blog.scss";
 
 export default function Blog() {
@@ -10,7 +11,7 @@ export default function Blog() {
   const [loading, setLoading] = useState(true);
 
   const organization = "itcs11";
-  const backendUrl = "http://localhost:5000";
+  const backendUrl = API_URL;
 
   useEffect(() => {
     const fetchBlogs = async () => {

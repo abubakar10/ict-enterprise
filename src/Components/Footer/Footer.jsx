@@ -84,7 +84,9 @@ const Footer = () => {
 
       {/* Optional: Copyright Line */}
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} ITCS Pakistan. All rights reserved.</p>
+        <p style={{ color: 'rgba(255, 255, 255, 0.7)', textAlign: 'center', paddingTop: '20px', fontSize: '14px' }}>
+          &copy; {new Date().getFullYear()} ITCS Pakistan. All rights reserved.
+        </p>
       </div>
     </footer>
   );

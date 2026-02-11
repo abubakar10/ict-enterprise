@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import alignitLogo from '../../assets/logos/itcsLogo.png'
 import './Header.scss'
 
 const Header = () => {
   const navigate = useNavigate()
+  const location = useLocation()
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => setIsOpen(prev => !prev)
@@ -15,6 +16,19 @@ const Header = () => {
       e.preventDefault()
       navigate('/services')
     }
+  }
+
+  // Check if current path matches
+  const isActive = (path) => {
+    if (path === '/') {
+      return location.pathname === '/' || location.pathname === '/home'
+    }
+    return location.pathname.startsWith(path)
+  }
+
+  // Check if any service route is active
+  const isServicesActive = () => {
+    return location.pathname.startsWith('/services')
   }
 
   return (
@@ -34,15 +48,18 @@ const Header = () => {
               id="navbarNav"
             >
               <ul className="navbar-nav">
-                {/* ← ALL YOUR NAV ITEMS EXACTLY AS BEFORE → */}
                 <li className="nav-item">
-                  <a className="nav-link active" onClick={() => { navigate('/'); closeMenu() }} style={{ cursor: 'pointer' }}>
+                  <a 
+                    className={`nav-link ${isActive('/') ? 'active' : ''}`} 
+                    onClick={() => { navigate('/'); closeMenu() }} 
+                    style={{ cursor: 'pointer' }}
+                  >
                     Home
                   </a>
                 </li>
                 <li className="nav-item dropdown">
                   <a
-                    className="nav-link dropdown-toggle"
+                    className={`nav-link dropdown-toggle ${isServicesActive() ? 'active' : ''}`}
                     href="/services"
                     id="servicesDropdown"
                     role="button"
@@ -62,11 +79,51 @@ const Header = () => {
                   </ul>
                 </li>
                 
-                <li className="nav-item"><a className="nav-link" onClick={() => { navigate('/vision-mission'); closeMenu() }} style={{ cursor: 'pointer' }}>Vision & Mission</a></li>
-                <li className="nav-item"><a className="nav-link" onClick={() => { navigate('/blog'); closeMenu() }} style={{ cursor: 'pointer' }}>Blogs</a></li>
-                <li className="nav-item"><a className="nav-link" onClick={() => { navigate('/about-us'); closeMenu() }} style={{ cursor: 'pointer' }}>About Us</a></li>
-                <li className="nav-item"><a className="nav-link" onClick={() => { navigate('/contact'); closeMenu() }} style={{ cursor: 'pointer' }}>Contact</a></li>
-                <li className="nav-item"><a className="nav-link" onClick={() => { navigate('/careers'); closeMenu() }} style={{ cursor: 'pointer' }}>Careers</a></li>
+                <li className="nav-item">
+                  <a 
+                    className={`nav-link ${isActive('/vision-mission') ? 'active' : ''}`} 
+                    onClick={() => { navigate('/vision-mission'); closeMenu() }} 
+                    style={{ cursor: 'pointer' }}
+                  >
+                    Vision & Mission
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a 
+                    className={`nav-link ${isActive('/blog') ? 'active' : ''}`} 
+                    onClick={() => { navigate('/blog'); closeMenu() }} 
+                    style={{ cursor: 'pointer' }}
+                  >
+                    Blogs
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a 
+                    className={`nav-link ${isActive('/about-us') ? 'active' : ''}`} 
+                    onClick={() => { navigate('/about-us'); closeMenu() }} 
+                    style={{ cursor: 'pointer' }}
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a 
+                    className={`nav-link ${isActive('/careers') ? 'active' : ''}`} 
+                    onClick={() => { navigate('/careers'); closeMenu() }} 
+                    style={{ cursor: 'pointer' }}
+                  >
+                    Careers
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a 
+                    className={`nav-link contact-btn ${isActive('/contact') ? 'active' : ''}`} 
+                    onClick={() => { navigate('/contact'); closeMenu() }} 
+                    style={{ cursor: 'pointer' }}
+                  >
+                    Contact
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
