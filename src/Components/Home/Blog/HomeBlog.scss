@@ -104,9 +104,11 @@
   .blog-grid { grid-template-columns: 1fr; gap: 28px; }
 }
 @media (max-width: 480px) {
-  .blog-public-container { padding: 10px 15px 35px !important; }
-  .blog-public-title { font-size: 30px; margin: 10px 0 30px 0 !important; }
-  .blog-card { padding: 18px; }
+  .blog-public-container { padding: 12px 16px 35px !important; }
+  .blog-public-title { font-size: clamp(24px, 6vw, 30px); margin: 12px 0 28px 0 !important; line-height: 1.25; }
+  .blog-grid { gap: 20px; padding: 0 12px; }
+  .blog-card { padding: 20px; }
   .blog-cover { height: 160px; }
-  .blog-card h3 { font-size: 20px; }
+  .blog-card h3 { font-size: 18px; }
+  .read-more { min-height: 44px; display: inline-flex; align-items: center; }
 }

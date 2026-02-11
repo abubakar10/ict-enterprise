@@ -257,6 +257,10 @@
         margin-bottom: 14px;
       }
 
+      .feature-title {
+        font-size: clamp(24px, 5vw, 32px);
+      }
+
       .feature-subtitle {
         font-size: 16px;
       }
@@ -372,16 +376,21 @@
 // Small mobile phones
 @media (max-width: 480px) {
   .home-feature {
-    padding: 45px 15px;
+    padding: 45px 16px;
 
     .feature-container {
-      gap: 30px;
+      gap: 28px;
     }
 
     .feature-content {
       .feature-badge {
-        font-size: 9px;
-        padding: 4px 10px;
+        font-size: 10px;
+        padding: 5px 10px;
+      }
+
+      .feature-title {
+        font-size: clamp(22px, 6vw, 28px);
+        line-height: 1.25;
       }
 
       .feature-subtitle {
@@ -420,9 +429,12 @@
       }
 
       .feature-btn {
-        padding: 10px 20px;
-        font-size: 13px;
-        gap: 6px;
+        padding: 12px 22px;
+        font-size: 14px;
+        gap: 8px;
+        min-height: 48px;
+        display: inline-flex;
+        align-items: center;
       }
     }
 
@@ -447,8 +459,12 @@
 
     .feature-content {
       .feature-badge {
-        font-size: 8px;
+        font-size: 9px;
         padding: 4px 9px;
+      }
+
+      .feature-title {
+        font-size: clamp(20px, 6vw, 26px);
       }
 
       .feature-subtitle {
