@@ -142,8 +142,8 @@ const Header = () => {
       </div>
 
       
-      <div className="auth-buttons">
-        {/* <button className="btn btn-login" onClick={() => navigate('/login')}> */}
+      {/* <div className="auth-buttons">
+        <button className="btn btn-login" onClick={() => navigate('/login')}>
         <button className="btn btn-login" onClick={() => navigate('/')}>
 
           Login
@@ -164,7 +164,7 @@ const Header = () => {
         </button>
 
         
-      </div>
+      </div> */}
     </div>
   )
 }
