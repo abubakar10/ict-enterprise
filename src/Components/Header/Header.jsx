@@ -48,6 +48,18 @@ const Header = () => {
               className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`}
               id="navbarNav"
             >
+              <div className="mobile-menu-header">
+                <span className="mobile-menu-title">Menu</span>
+                <button
+                  type="button"
+                  className="mobile-menu-close"
+                  aria-label="Close menu"
+                  onClick={closeMenu}
+                >
+                  <span className="mobile-menu-close-icon" aria-hidden>×</span>
+                  Close
+                </button>
+              </div>
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <a 
@@ -141,13 +153,10 @@ const Header = () => {
         </nav>
       </div>
 
-      
-      {/* <div className="auth-buttons">
-        <button className="btn btn-login" onClick={() => navigate('/login')}>
-        <button className="btn btn-login" onClick={() => navigate('/')}>
-
+      <div className="auth-buttons">
+        {/* <button className="btn btn-login" onClick={() => navigate('/')}>
           Login
-        </button>
+        </button> */}
         <button
           className="custom-toggler"
           type="button"
@@ -162,9 +171,7 @@ const Header = () => {
             <span></span>
           </span>
         </button>
-
-        
-      </div> */}
+      </div>
     </div>
   )
 }
