@@ -14,8 +14,8 @@ const Header = () => {
   const handleServiceNavigation = (e) => {
     if (window.innerWidth > 992) {
       e.preventDefault()
-      // navigate('/services')
-      navigate('/')
+      navigate('/services')
+      // navigate('/')
     }
   }
 
@@ -73,8 +73,8 @@ const Header = () => {
                 <li className="nav-item dropdown">
                   <a
                     className={`nav-link dropdown-toggle ${isServicesActive() ? 'active' : ''}`}
-                    // href="/services"
-                    href="/"
+                    href="/services"
+                    // href="/"
                     id="servicesDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -96,8 +96,8 @@ const Header = () => {
                 <li className="nav-item">
                   <a 
                     className={`nav-link ${isActive('/vision-mission') ? 'active' : ''}`} 
-                    onClick={() => { navigate('/'); closeMenu() }} 
-                    // onClick={() => { navigate('/vision-mission'); closeMenu() }} 
+                    // onClick={() => { navigate('/'); closeMenu() }} 
+                    onClick={() => { navigate('/vision-mission'); closeMenu() }} 
                     style={{ cursor: 'pointer' }}
                   >
                     Vision & Mission
@@ -106,8 +106,8 @@ const Header = () => {
                 <li className="nav-item">
                   <a 
                     className={`nav-link ${isActive('/blog') ? 'active' : ''}`} 
-                    // onClick={() => { navigate('/blog'); closeMenu() }} 
-                    onClick={() => { navigate('/'); closeMenu() }} 
+                     onClick={() => { navigate('/blog'); closeMenu() }} 
+                    // onClick={() => { navigate('/'); closeMenu() }} 
 
                     style={{ cursor: 'pointer' }}
                   >
@@ -117,8 +117,8 @@ const Header = () => {
                 <li className="nav-item">
                   <a 
                     className={`nav-link ${isActive('/about-us') ? 'active' : ''}`} 
-                    // onClick={() => { navigate('/about-us'); closeMenu() }} 
-                    onClick={() => { navigate('/'); closeMenu() }} 
+                    onClick={() => { navigate('/about-us'); closeMenu() }} 
+                    // onClick={() => { navigate('/'); closeMenu() }} 
 
                     style={{ cursor: 'pointer' }}
                   >
@@ -139,8 +139,8 @@ const Header = () => {
                 <li className="nav-item">
                   <a 
                     className={`nav-link  ${isActive('/contact') ? 'active' : ''}`} 
-                    // onClick={() => { navigate('/contact'); closeMenu() }} 
-                    onClick={() => { navigate('/'); closeMenu() }} 
+                    onClick={() => { navigate('/contact'); closeMenu() }} 
+                    // onClick={() => { navigate('/'); closeMenu() }} 
 
                     style={{ cursor: 'pointer' }}
                   >
