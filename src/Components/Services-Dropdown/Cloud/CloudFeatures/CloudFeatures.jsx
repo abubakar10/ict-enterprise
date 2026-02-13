@@ -78,23 +78,28 @@ const CloudFeatures = () => {
     <section className="cloud-features">
       <div className="features-container">
         <div className="features-header">
-          <span className="section-badge">FEATURES & BENEFITS</span>
-          <h2 className="section-title">Everything You Need for Cloud Success</h2>
+          <span className="section-badge">CLOUD CAPABILITIES</span>
+          <h2 className="section-title">Powerful Features for Modern Business</h2>
           <p className="section-description">
-            Comprehensive cloud solutions powered by Microsoft Azure to accelerate 
-            your digital transformation journey.
+            Discover how our comprehensive cloud solutions can transform your 
+            infrastructure and drive unprecedented growth.
           </p>
         </div>
 
         <div className="features-grid">
           {features.map((feature, index) => (
-            <div className="feature-card" key={index}>
-              <div className="card-icon">
-                {feature.icon}
+            <div className="feature-card" key={index} data-index={index}>
+              <div className="card-top">
+                <div className="card-icon-wrapper">
+                  {feature.icon}
+                </div>
+                <div className="card-number">0{index + 1}</div>
               </div>
-              <h3 className="card-title">{feature.title}</h3>
-              <p className="card-description">{feature.description}</p>
-              <div className="card-hover-line"></div>
+              <div className="card-content">
+                <h3 className="card-title">{feature.title}</h3>
+                <p className="card-description">{feature.description}</p>
+              </div>
+              <div className="card-accent"></div>
             </div>
           ))}
         </div>

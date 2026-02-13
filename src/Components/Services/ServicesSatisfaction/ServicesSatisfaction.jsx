@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import "./ServicesSatisfaction.scss";
-import monumentImage from "./../../../assets/images/services-side.jpg";
+import monumentImage from "./../../../assets/images/services-side.webp";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloud, faLock, faBuilding, faCog, faNetworkWired, faBriefcase } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,12 +9,12 @@ const ServicesSatisfaction = () => {
   const [progressValues, setProgressValues] = useState(Array(6).fill(0));
 
   const satisfactionData = [
-    { title: "Cloud Solutions", percentage: 97, icon: faCloud },
-    { title: "Cybersecurity", percentage: 82, icon: faLock },
-    { title: "Enterprise Solutions", percentage: 87, icon: faBuilding },
-    { title: "IT Services", percentage: 89, icon: faCog },
-    { title: "Network Solutions", percentage: 80, icon: faNetworkWired },
-    { title: "Consulting", percentage: 92, icon: faBriefcase },
+    { title: "Cloud Solutions", percentage: 99, icon: faCloud },
+    { title: "Cybersecurity", percentage: 85, icon: faLock },
+    { title: "Enterprise Solutions", percentage: 90, icon: faBuilding },
+    { title: "IT Services", percentage: 85, icon: faCog },
+    { title: "Network Solutions", percentage: 85, icon: faNetworkWired },
+    { title: "Consulting", percentage: 85, icon: faBriefcase },
   ];
 
 
@@ -51,11 +51,11 @@ const ServicesSatisfaction = () => {
       <div className="satisfaction-container">
         <div className="satisfaction-content">
           <span className="section-badge">CUSTOMER SATISFACTION</span>
-          <h2 className="section-title">Delighted Customers</h2>
+          <h2 className="section-title">Client Success Stories</h2>
           <p className="section-description">
-            We are proud to have achieved the highest ranking in a survey of over
-            100 C-level executives from top IT firms in Pakistan, as evidenced by
-            our exceptional overall satisfaction scores.
+            Our commitment to excellence has earned us recognition from industry leaders. 
+            We've consistently received outstanding ratings from over 150 senior executives 
+            across Pakistan's leading technology organizations.
           </p>
 
           <div className="satisfaction-scores">
@@ -64,7 +64,7 @@ const ServicesSatisfaction = () => {
                 <div className="item-header">
                   <div className="item-info">
                     <span className="item-icon">
-                      <FontAwesomeIcon icon={item.icon} color="#ffffff" />
+                      <FontAwesomeIcon icon={item.icon} />
                     </span>
                     <span className="item-title">{item.title}</span>
                   </div>
@@ -78,9 +78,7 @@ const ServicesSatisfaction = () => {
                     style={{
                       width: `${progressValues[index]}%`,
                     }}
-                  >
-                    <div className="progress-glow"></div>
-                  </div>
+                  ></div>
                 </div>
               </div>
             ))}
@@ -89,12 +87,12 @@ const ServicesSatisfaction = () => {
           <div className="satisfaction-stats">
             <div className="stat-item">
               <div className="stat-number">100+</div>
-              <div className="stat-label">C-Level Executives Surveyed</div>
+              <div className="stat-label">Industry Leaders Consulted</div>
             </div>
             <div className="stat-divider"></div>
             <div className="stat-item">
-              <div className="stat-number">88%</div>
-              <div className="stat-label">Average Satisfaction</div>
+              <div className="stat-number">85%</div>
+              <div className="stat-label">Overall Satisfaction Rate</div>
             </div>
           </div>
         </div>

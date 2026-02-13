@@ -4,46 +4,73 @@ import './ITServicesNew.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCog, faClock, faWrench, faCheck, faDesktop, faBroadcastTower, faSync, faSave, faEye, faPhone} from '@fortawesome/free-solid-svg-icons';
 const ITHero = () => (
-  <section className="service-hero it-hero">
-    <div className="hero-background">
-      <div className="it-pattern"></div>
-    </div>
+  <section className="it-hero">
     <div className="hero-container">
-      <div className="hero-badge">
-        <FontAwesomeIcon icon={faCog} />
-        <span>MANAGED IT SERVICES</span>
-      </div>
-      <h1 className="hero-title">
-        Focus on Your Business, We Handle
-        <span className="gradient-text"> Your IT</span>
-      </h1>
-      <p className="hero-description">
-        Comprehensive managed IT services that keep your technology running smoothly. From 24/7 
-        support to infrastructure management, we've got you covered.
-      </p>
-      <div className="hero-actions">
-        <button className="btn-primary">
-          Get Support Now
-          <span>→</span>
-        </button>
-        <button className="btn-secondary">
-          View Services
-        </button>
-      </div>
-      <div className="hero-badges-row">
-        <div className="badge-item">
-          <FontAwesomeIcon icon={faClock} />
-          <span>24/7 Support</span>
+      <div className="hero-content">
+        <div className="hero-badge-wrapper">
+          <span className="hero-badge">MANAGED IT SERVICES</span>
         </div>
-        <div className="badge-item">
-          <FontAwesomeIcon icon={faWrench} />
-          <span>Proactive Monitoring</span>
-        </div>
-        <div className="badge-item">
-          <FontAwesomeIcon icon={faCheck} />
-          <span>99.9% Uptime</span>
+        
+        <h1 className="hero-title">
+          Focus on Growth, We Handle
+          <span className="gradient-text"> Your Technology</span>
+        </h1>
+
+        <p className="hero-description">
+          Comprehensive managed IT services designed to keep your business running smoothly. 
+          From round-the-clock support to proactive infrastructure management, we've got you covered.
+        </p>
+
+        <div className="hero-actions">
+          <button className="btn-primary">
+            Get Started
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+          <button className="btn-secondary">
+            Learn More
+          </button>
         </div>
       </div>
+
+      <div className="hero-services">
+        <div className="service-card">
+          <div className="service-icon">
+            <FontAwesomeIcon icon={faClock} />
+          </div>
+          <div className="service-content">
+            <div className="service-label">Support</div>
+            <div className="service-value">24/7 Available</div>
+          </div>
+        </div>
+
+        <div className="service-card">
+          <div className="service-icon">
+            <FontAwesomeIcon icon={faWrench} />
+          </div>
+          <div className="service-content">
+            <div className="service-label">Monitoring</div>
+            <div className="service-value">Proactive Management</div>
+          </div>
+        </div>
+
+        <div className="service-card">
+          <div className="service-icon">
+            <FontAwesomeIcon icon={faCheck} />
+          </div>
+          <div className="service-content">
+            <div className="service-label">Reliability</div>
+            <div className="service-value">99.9% Uptime</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="hero-background-elements">
+      <div className="bg-gear gear-1"></div>
+      <div className="bg-gear gear-2"></div>
+      <div className="bg-gear gear-3"></div>
     </div>
   </section>
 );
@@ -59,23 +86,30 @@ const ITFeatures = () => {
   ];
 
   return (
-    <section className="service-features">
+    <section className="it-features">
       <div className="features-container">
         <div className="features-header">
-          <span className="section-badge">COMPREHENSIVE COVERAGE</span>
-          <h2 className="section-title">Complete IT Management</h2>
+          <span className="section-badge">IT SERVICES</span>
+          <h2 className="section-title">Comprehensive IT Management</h2>
           <p className="section-description">
-            End-to-end IT services to keep your business running at peak performance.
+            End-to-end managed IT services designed to keep your business running 
+            at peak performance with minimal downtime.
           </p>
         </div>
         <div className="features-grid">
           {features.map((feature, idx) => (
-            <div className="feature-card" key={idx}>
-              <div className="feature-icon">
-                <FontAwesomeIcon icon={feature.icon} size="2x" />
+            <div className="feature-card" key={idx} data-index={idx}>
+              <div className="card-header">
+                <div className="card-icon-wrapper">
+                  <FontAwesomeIcon icon={feature.icon} className="card-icon" />
+                </div>
+                <div className="card-number">0{idx + 1}</div>
               </div>
-              <h3 style={{fontSize: '20px', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '12px'}}>{feature.title}</h3>
-              <p style={{fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.6}}>{feature.description}</p>
+              <div className="card-content">
+                <h3 className="card-title">{feature.title}</h3>
+                <p className="card-description">{feature.description}</p>
+              </div>
+              <div className="card-accent"></div>
             </div>
           ))}
         </div>
@@ -85,38 +119,55 @@ const ITFeatures = () => {
 };
 
 const ITCTA = () => (
-  <section className="service-cta">
+  <section className="it-cta">
     <div className="cta-container">
-      <h2 style={{fontSize: 'clamp(32px, 5vw, 52px)', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '20px'}}>
-        Let Us <span className="gradient-text">Manage</span> Your IT
-      </h2>
-      <p style={{fontSize: '18px', color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto 40px'}}>
-        Experience worry-free IT with our managed services. Get started today.
-      </p>
-      <div style={{display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '50px'}}>
-        <button className="btn-primary" style={{padding: '16px 32px', fontSize: '16px', fontWeight: 600, borderRadius: '12px', border: 'none', cursor: 'pointer', background: 'var(--accent-gradient)', color: 'white'}}>
-          Start Free Trial
-        </button>
-        <button className="btn-secondary" style={{padding: '16px 32px', fontSize: '16px', fontWeight: 600, borderRadius: '12px', border: '1px solid var(--border-color)', cursor: 'pointer', background: 'var(--bg-card)', color: 'var(--text-primary)'}}>
-          Talk to Expert
-        </button>
+      <div className="cta-main">
+        <div className="cta-content">
+          <span className="cta-badge">GET STARTED TODAY</span>
+          <h2 className="cta-title">
+            Let Us Manage Your
+            <span className="gradient-text"> IT Infrastructure</span>
+          </h2>
+          <p className="cta-description">
+            Experience worry-free IT management with our comprehensive services. 
+            Focus on your business while we handle all your technology needs.
+          </p>
+          <div className="cta-actions">
+            <button className="btn-primary">
+              Start Free Trial
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+            <button className="btn-secondary">
+              Contact Expert
+            </button>
+          </div>
+        </div>
+
+        <div className="cta-stats-grid">
+          <div className="stat-box">
+            <div className="stat-number">400+</div>
+            <div className="stat-label">Managed Systems</div>
+          </div>
+          <div className="stat-box">
+            <div className="stat-number">&lt;5min</div>
+            <div className="stat-label">Response Time</div>
+          </div>
+          <div className="stat-box">
+            <div className="stat-number">99.9%</div>
+            <div className="stat-label">System Uptime</div>
+          </div>
+          <div className="stat-box">
+            <div className="stat-number">24/7</div>
+            <div className="stat-label">Expert Support</div>
+          </div>
+        </div>
       </div>
-      <div className="cta-stats">
-        <div className="stat-item">
-          <div className="stat-number">400+</div>
-          <div className="stat-label">Managed Systems</div>
-        </div>
-        <div className="stat-divider"></div>
-        <div className="stat-item">
-          <div className="stat-number">&lt;5min</div>
-          <div className="stat-label">Avg Response Time</div>
-        </div>
-        <div className="stat-divider"></div>
-        <div className="stat-item">
-          <div className="stat-number">99.9%</div>
-          <div className="stat-label">System Uptime</div>
-        </div>
-      </div>
+    </div>
+    <div className="cta-decoration">
+      <div className="decoration-gear gear-1"></div>
+      <div className="decoration-gear gear-2"></div>
     </div>
   </section>
 );

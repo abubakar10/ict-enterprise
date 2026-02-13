@@ -42,22 +42,28 @@ const CyberFeatures = () => {
     <section className="cyber-features">
       <div className="features-container">
         <div className="features-header">
-          <span className="section-badge">COMPREHENSIVE PROTECTION</span>
-          <h2 className="section-title">Multi-Layered Security Approach</h2>
+          <span className="section-badge">SECURITY CAPABILITIES</span>
+          <h2 className="section-title">Comprehensive Defense Solutions</h2>
           <p className="section-description">
-            Protect your digital assets with our comprehensive cybersecurity solutions
-            designed to defend against modern threats.
+            Multi-layered security architecture designed to protect your business 
+            from sophisticated cyber threats and vulnerabilities.
           </p>
         </div>
 
         <div className="features-grid">
           {features.map((feature, index) => (
-            <div className="feature-card" key={index}>
-              <div className="card-icon">
-                <FontAwesomeIcon icon={feature.icon} />
+            <div className="feature-card" key={index} data-index={index}>
+              <div className="card-header">
+                <div className="card-icon-wrapper">
+                  <FontAwesomeIcon icon={feature.icon} className="card-icon" />
+                </div>
+                <div className="card-number">0{index + 1}</div>
               </div>
-              <h3 className="card-title">{feature.title}</h3>
-              <p className="card-description">{feature.description}</p>
+              <div className="card-content">
+                <h3 className="card-title">{feature.title}</h3>
+                <p className="card-description">{feature.description}</p>
+              </div>
+              <div className="card-accent"></div>
             </div>
           ))}
         </div>

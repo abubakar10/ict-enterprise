@@ -5,46 +5,73 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBuilding, faChartBar, faSync, faMobileAlt, faLink, faUsers} from '@fortawesome/free-solid-svg-icons';
 
 const EnterpriseHero = () => (
-  <section className="service-hero enterprise-hero">
-    <div className="hero-background">
-      <div className="enterprise-pattern"></div>
-    </div>
+  <section className="enterprise-hero">
     <div className="hero-container">
-      <div className="hero-badge">
-        <FontAwesomeIcon icon={faBuilding} />
-        <span>ENTERPRISE SOLUTIONS</span>
-      </div>
-      <h1 className="hero-title">
-        Empower Your Enterprise with
-        <span className="gradient-text"> Intelligent Solutions</span>
-      </h1>
-      <p className="hero-description">
-        Transform your business operations with comprehensive enterprise solutions. From ERP to CRM, 
-        we provide integrated systems that drive efficiency and growth.
-      </p>
-      <div className="hero-actions">
-        <button className="btn-primary">
-          Explore Solutions
-          <span>→</span>
-        </button>
-        <button className="btn-secondary">
-          Request Demo
-        </button>
-      </div>
-      <div className="hero-badges-row">
-        <div className="badge-item">
-          <FontAwesomeIcon icon={faChartBar} />
-          <span>Integrated Systems</span>
+      <div className="hero-content">
+        <div className="hero-badge-wrapper">
+          <span className="hero-badge">ENTERPRISE EXCELLENCE</span>
         </div>
-        <div className="badge-item">
-          <FontAwesomeIcon icon={faSync} />
-          <span>Process Automation</span>
-        </div>
-        <div className="badge-item">
-          <FontAwesomeIcon icon={faChartBar} />
-          <span>Business Intelligence</span>
+        
+        <h1 className="hero-title">
+          Scale Your Business with
+          <span className="gradient-text"> Enterprise Solutions</span>
+        </h1>
+
+        <p className="hero-description">
+          Comprehensive enterprise applications and integrated systems designed to 
+          streamline operations, enhance productivity, and drive sustainable growth.
+        </p>
+
+        <div className="hero-actions">
+          <button className="btn-primary">
+            Discover Solutions
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+          <button className="btn-secondary">
+            Schedule Demo
+          </button>
         </div>
       </div>
+
+      <div className="hero-capabilities">
+        <div className="capability-card">
+          <div className="capability-icon">
+            <FontAwesomeIcon icon={faChartBar} />
+          </div>
+          <div className="capability-content">
+            <div className="capability-label">Integration</div>
+            <div className="capability-value">Seamless Systems</div>
+          </div>
+        </div>
+
+        <div className="capability-card">
+          <div className="capability-icon">
+            <FontAwesomeIcon icon={faSync} />
+          </div>
+          <div className="capability-content">
+            <div className="capability-label">Automation</div>
+            <div className="capability-value">Smart Workflows</div>
+          </div>
+        </div>
+
+        <div className="capability-card">
+          <div className="capability-icon">
+            <FontAwesomeIcon icon={faBuilding} />
+          </div>
+          <div className="capability-content">
+            <div className="capability-label">Scale</div>
+            <div className="capability-value">Enterprise Ready</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="hero-background-elements">
+      <div className="bg-shape shape-1"></div>
+      <div className="bg-shape shape-2"></div>
+      <div className="bg-shape shape-3"></div>
     </div>
   </section>
 );
@@ -60,23 +87,30 @@ const EnterpriseFeatures = () => {
   ];
 
   return (
-    <section className="service-features">
+    <section className="enterprise-features">
       <div className="features-container">
         <div className="features-header">
-          <span className="section-badge">COMPLETE SOLUTIONS</span>
-          <h2 className="section-title">Enterprise-Grade Applications</h2>
+          <span className="section-badge">ENTERPRISE APPLICATIONS</span>
+          <h2 className="section-title">Complete Business Solutions</h2>
           <p className="section-description">
-            Powerful solutions designed to meet the complex needs of modern enterprises.
+            Integrated enterprise applications designed to optimize operations, 
+            enhance collaboration, and accelerate business growth.
           </p>
         </div>
         <div className="features-grid">
           {features.map((feature, idx) => (
-            <div className="feature-card" key={idx}>
-              <div className="feature-icon">
-                <FontAwesomeIcon icon={feature.icon} size="2x" />
+            <div className="feature-card" key={idx} data-index={idx}>
+              <div className="card-header">
+                <div className="card-icon-wrapper">
+                  <FontAwesomeIcon icon={feature.icon} className="card-icon" />
+                </div>
+                <div className="card-number">0{idx + 1}</div>
               </div>
-              <h3 style={{fontSize: '20px', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '12px'}}>{feature.title}</h3>
-              <p style={{fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.6}}>{feature.description}</p>
+              <div className="card-content">
+                <h3 className="card-title">{feature.title}</h3>
+                <p className="card-description">{feature.description}</p>
+              </div>
+              <div className="card-accent"></div>
             </div>
           ))}
         </div>
@@ -86,38 +120,55 @@ const EnterpriseFeatures = () => {
 };
 
 const EnterpriseCTA = () => (
-  <section className="service-cta">
+  <section className="enterprise-cta">
     <div className="cta-container">
-      <h2 style={{fontSize: 'clamp(32px, 5vw, 52px)', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '20px'}}>
-        Ready to <span className="gradient-text">Scale</span> Your Business?
-      </h2>
-      <p style={{fontSize: '18px', color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto 40px'}}>
-        Let's discuss how our enterprise solutions can transform your operations.
-      </p>
-      <div style={{display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '50px'}}>
-        <button className="btn-primary" style={{padding: '16px 32px', fontSize: '16px', fontWeight: 600, borderRadius: '12px', border: 'none', cursor: 'pointer', background: 'var(--accent-gradient)', color: 'white'}}>
-          Get Started
-        </button>
-        <button className="btn-secondary" style={{padding: '16px 32px', fontSize: '16px', fontWeight: 600, borderRadius: '12px', border: '1px solid var(--border-color)', cursor: 'pointer', background: 'var(--bg-card)', color: 'var(--text-primary)'}}>
-          Contact Sales
-        </button>
+      <div className="cta-main">
+        <div className="cta-content">
+          <span className="cta-badge">TRANSFORM YOUR BUSINESS</span>
+          <h2 className="cta-title">
+            Ready to Scale Your
+            <span className="gradient-text"> Enterprise?</span>
+          </h2>
+          <p className="cta-description">
+            Discover how our enterprise solutions can streamline your operations, 
+            improve efficiency, and drive measurable business results.
+          </p>
+          <div className="cta-actions">
+            <button className="btn-primary">
+              Request Demo
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+            <button className="btn-secondary">
+              Contact Sales
+            </button>
+          </div>
+        </div>
+
+        <div className="cta-stats-grid">
+          <div className="stat-box">
+            <div className="stat-number">150+</div>
+            <div className="stat-label">Enterprise Clients</div>
+          </div>
+          <div className="stat-box">
+            <div className="stat-number">99.5%</div>
+            <div className="stat-label">System Uptime</div>
+          </div>
+          <div className="stat-box">
+            <div className="stat-number">50M+</div>
+            <div className="stat-label">Transactions</div>
+          </div>
+          <div className="stat-box">
+            <div className="stat-number">24/7</div>
+            <div className="stat-label">Support Available</div>
+          </div>
+        </div>
       </div>
-      <div className="cta-stats">
-        <div className="stat-item">
-          <div className="stat-number">150+</div>
-          <div className="stat-label">Enterprise Clients</div>
-        </div>
-        <div className="stat-divider"></div>
-        <div className="stat-item">
-          <div className="stat-number">99.5%</div>
-          <div className="stat-label">System Uptime</div>
-        </div>
-        <div className="stat-divider"></div>
-        <div className="stat-item">
-          <div className="stat-number">50M+</div>
-          <div className="stat-label">Transactions Processed</div>
-        </div>
-      </div>
+    </div>
+    <div className="cta-decoration">
+      <div className="decoration-element elem-1"></div>
+      <div className="decoration-element elem-2"></div>
     </div>
   </section>
 );

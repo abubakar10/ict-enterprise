@@ -59,16 +59,21 @@ const VisionContent = () => {
     <>
       <section className="vision-content">
         <div className="content-container">
-          {visionPoints.map((point, index) => (
-            <div key={index} className="vision-card">
-              <div className="card-icon">
-                <FontAwesomeIcon icon={point.icon} />
+          <div className="vision-grid">
+            {visionPoints.map((point, index) => (
+              <div key={index} className="vision-card" data-index={index}>
+                <div className="card-header">
+                  <div className="card-icon-wrapper">
+                    <FontAwesomeIcon icon={point.icon} className="card-icon" />
+                  </div>
+                  <div className="card-number">0{index + 1}</div>
+                </div>
+                <h2 className="card-title">{point.title}</h2>
+                <p className="card-description">{point.description}</p>
+                <div className="card-accent"></div>
               </div>
-              <h2>{point.title}</h2>
-              <p>{point.description}</p>
-              <div className="card-glow"></div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
@@ -76,15 +81,18 @@ const VisionContent = () => {
         <div className="values-container">
           <div className="section-header">
             <span className="section-badge">CORE VALUES</span>
-            <h2>What We Stand For</h2>
-            <p>Our values guide everything we do and shape our culture</p>
+            <h2>Principles That Drive Us</h2>
+            <p>The fundamental beliefs that shape our decisions and actions every day</p>
           </div>
           <div className="values-grid">
             {coreValues.map((value, index) => (
-              <div key={index} className="value-card">
-                <div className="value-number">{value.number}</div>
-                <h3>{value.title}</h3>
-                <p>{value.description}</p>
+              <div key={index} className="value-card" data-index={index}>
+                <div className="value-header">
+                  <div className="value-number">{value.number}</div>
+                  <h3 className="value-title">{value.title}</h3>
+                </div>
+                <p className="value-description">{value.description}</p>
+                <div className="value-line"></div>
               </div>
             ))}
           </div>

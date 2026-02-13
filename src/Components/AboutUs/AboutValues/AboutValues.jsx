@@ -8,32 +8,32 @@ const AboutValues = () => {
     {
       icon: faLightbulb,
       title: "Innovation",
-      description: "We embrace cutting-edge technologies and creative solutions to stay ahead of the curve."
+      description: "Pioneering new approaches and leveraging emerging technologies to create breakthrough solutions that transform businesses."
     },
     {
       icon: faBullseye,
       title: "Excellence",
-      description: "We maintain the highest standards in service delivery and customer satisfaction."
+      description: "Delivering world-class quality in every project, exceeding expectations and setting new industry benchmarks."
     },
     {
       icon: faHandshake,
       title: "Integrity",
-      description: "We build trust through transparency, honesty, and ethical business practices."
+      description: "Operating with unwavering ethical standards, building lasting relationships founded on trust and respect."
     },
     {
       icon: faRocket,
       title: "Growth",
-      description: "We invest in continuous learning and development for our team and clients."
+      description: "Fostering continuous improvement and empowering our team and clients to reach their full potential."
     },
     {
       icon: faUsers,
-      title: "Teamwork",
-      description: "We collaborate effectively to achieve extraordinary results together."
+      title: "Collaboration",
+      description: "Working together seamlessly, combining diverse talents to deliver exceptional outcomes for our clients."
     },
     {
       icon: faHeart,
-      title: "Customer Focus",
-      description: "We put our clients first and build lasting partnerships based on mutual success."
+      title: "Client Success",
+      description: "Dedicated to understanding your unique needs and delivering solutions that drive measurable business value."
     }
   ];
 
@@ -42,18 +42,23 @@ const AboutValues = () => {
       <div className="values-container">
         <div className="section-header">
           <span className="section-badge">OUR VALUES</span>
-          <h2>What Drives Us Forward</h2>
-          <p>These core principles guide our actions and define who we are as a company</p>
+          <h2>The Foundation of Our Success</h2>
+          <p>These fundamental beliefs shape our culture and drive everything we do</p>
         </div>
         <div className="values-grid">
           {values.map((value, index) => (
             <div key={index} className="value-card" data-index={index}>
-              <div className="value-icon">
-                <FontAwesomeIcon icon={value.icon} />
+              <div className="card-header">
+                <div className="value-icon-wrapper">
+                  <FontAwesomeIcon icon={value.icon} className="value-icon" />
+                </div>
+                <div className="card-number">0{index + 1}</div>
               </div>
-              <h3>{value.title}</h3>
-              <p>{value.description}</p>
-              <div className="card-hover-effect"></div>
+              <div className="card-content">
+                <h3>{value.title}</h3>
+                <p>{value.description}</p>
+              </div>
+              <div className="card-accent"></div>
             </div>
           ))}
         </div>

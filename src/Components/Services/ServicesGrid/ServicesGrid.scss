@@ -103,7 +103,7 @@
           width: 100%;
           height: 100%;
           object-fit: contain;
-          filter: brightness(0) invert(1);
+          filter: brightness(0) saturate(100%) invert(38%) sepia(100%) saturate(2000%) hue-rotate(200deg) brightness(1) contrast(1.2);
         }
       }
 
@@ -218,6 +218,10 @@
         .card-icon {
           background: var(--accent-blue);
           transform: scale(1.1);
+
+          img {
+            filter: brightness(0) invert(1);
+          }
         }
 
         .card-hover-indicator svg {

@@ -3,69 +3,68 @@ import "./AboutTeam.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode, faPalette, faLock, faChartBar } from "@fortawesome/free-solid-svg-icons";
 
-
 const AboutTeam = () => {
   const teamStats = [
     {
-      number: "50+",
-      label: "Professionals",
-      description: "Experts across various domains"
+      number: "75+",
+      label: "Specialists",
+      description: "Top-tier talent across technology domains"
+    },
+    {
+      number: "25+",
+      label: "Certifications",
+      description: "World-class professional credentials"
     },
     {
       number: "15+",
-      label: "Certifications",
-      description: "Industry-recognized credentials"
-    },
-    {
-      number: "20+",
-      label: "Years Avg.",
-      description: "Combined team experience"
+      label: "Years Average",
+      description: "Deep industry expertise per team member"
     }
   ];
 
   const departments = [
     {
       icon: faLaptopCode,
-      title: "Development Team",
-      count: "20+ Engineers",
-      skills: ["Full Stack", "Mobile", "Cloud", "DevOps"]
+      title: "Engineering Team",
+      count: "30+ Developers",
+      skills: ["Full Stack", "Mobile Apps", "Cloud Native", "DevOps"]
     },
     {
       icon: faPalette,
-      title: "Design Team",
-      count: "8+ Designers",
-      skills: ["UI/UX", "Graphics", "Branding", "Motion"]
+      title: "Creative Team",
+      count: "12+ Designers",
+      skills: ["UI/UX Design", "Visual Design", "Brand Identity", "Animation"]
     },
     {
       icon: faLock,
       title: "Security Team",
-      count: "6+ Specialists",
-      skills: ["Pentesting", "Compliance", "Audit", "SOC"]
+      count: "10+ Analysts",
+      skills: ["Penetration Testing", "Risk Assessment", "Security Audit", "SOC Operations"]
     },
     {
       icon: faChartBar,
-      title: "Consulting Team",
-      count: "10+ Consultants",
-      skills: ["Strategy", "Digital Transform", "PM", "BA"]
+      title: "Strategy Team",
+      count: "15+ Advisors",
+      skills: ["Digital Strategy", "Transformation", "Project Management", "Business Analysis"]
     }
   ];
-
 
   return (
     <section className="about-team">
       <div className="team-container">
         <div className="section-header">
           <span className="section-badge">OUR TEAM</span>
-          <h2>Meet the People Behind the Success</h2>
-          <p>A diverse team of passionate professionals dedicated to delivering excellence</p>
+          <h2>The Talented Minds Driving Innovation</h2>
+          <p>Our diverse team brings together exceptional talent, creativity, and expertise to deliver outstanding results</p>
         </div>
 
-        <div className="team-stats">
+        <div className="team-stats-grid">
           {teamStats.map((stat, index) => (
             <div key={index} className="stat-card">
-              <h3>{stat.number}</h3>
-              <h4>{stat.label}</h4>
-              <p>{stat.description}</p>
+              <div className="stat-number">{stat.number}</div>
+              <div className="stat-label">{stat.label}</div>
+              <div className="stat-description">{stat.description}</div>
+              <div className="stat-accent"></div>
             </div>
           ))}
         </div>
@@ -73,26 +72,37 @@ const AboutTeam = () => {
         <div className="departments-grid">
           {departments.map((dept, index) => (
             <div key={index} className="dept-card">
-              <div className="dept-icon">
-                <FontAwesomeIcon icon={dept.icon} />
+              <div className="card-top">
+                <div className="dept-icon-wrapper">
+                  <FontAwesomeIcon icon={dept.icon} className="dept-icon" />
+                </div>
+                <div className="dept-number">0{index + 1}</div>
               </div>
-              <h3>{dept.title}</h3>
-              <p className="dept-count">{dept.count}</p>
-              <div className="skills-list">
-                {dept.skills.map((skill, idx) => (
-                  <span key={idx} className="skill-tag">{skill}</span>
-                ))}
+              <div className="card-content">
+                <h3>{dept.title}</h3>
+                <p className="dept-count">{dept.count}</p>
+                <div className="skills-list">
+                  {dept.skills.map((skill, idx) => (
+                    <span key={idx} className="skill-tag">{skill}</span>
+                  ))}
+                </div>
               </div>
+              <div className="card-accent"></div>
             </div>
           ))}
         </div>
 
         <div className="join-cta">
-          <h3>Want to Join Our Team?</h3>
-          <p>We're always looking for talented individuals to join our growing family</p>
-          <a href="/careers" className="cta-button">
-            View Open Positions →
-          </a>
+          <div className="cta-content">
+            <h3>Ready to Make an Impact?</h3>
+            <p>Join a dynamic team where innovation meets opportunity. Explore exciting career paths with us</p>
+            <a href="/careers" className="cta-button">
+              Explore Career Opportunities
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>

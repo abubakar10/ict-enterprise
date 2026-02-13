@@ -15,44 +15,44 @@ const ServicesGrid = () => {
     {
       logo: cloud,
       title: "Cloud Solutions",
-      description: "Unlock Business 4.0 with our Microsoft Cloud partnership for a smooth edge-to-cloud transformation",
+      description: "Harness the power of cloud computing to scale your operations, reduce costs, and enhance agility with our comprehensive cloud services.",
       path: "/services/cloud",
-      features: ["Azure Migration", "Cloud Security", "Cost Optimization"]
+      features: ["Cloud Migration", "Infrastructure Setup", "Scalability Solutions"]
     },
     {
       logo: cybersecurity,
       title: "Cybersecurity",
-      description: "Cybersecurity: a growth imperative in today's expanding digital threat landscape.",
+      description: "Protect your digital assets with advanced security measures designed to safeguard against evolving cyber threats.",
       path: "/services/cyber-security",
-      features: ["Threat Detection", "Security Audits", "Incident Response"]
+      features: ["Risk Assessment", "Security Monitoring", "Compliance Management"]
     },
     {
       logo: consulting,
       title: "IT Consulting",
-      description: "Thrive amidst change with a transformative strategy centered on purpose.",
+      description: "Strategic guidance and expert insights to help you navigate complex technology decisions and achieve your business objectives.",
       path: "/services/consulting",
-      features: ["Strategy Planning", "Digital Transformation", "Tech Advisory"]
+      features: ["Technology Roadmap", "Digital Strategy", "Expert Advisory"]
     },
     {
       logo: enterpriseSol,
       title: "Enterprise Solutions",
-      description: "Transform your business with intelligent solutions and a holistic approach to enterprise applications.",
+      description: "Comprehensive enterprise-grade applications and systems that streamline operations and drive organizational efficiency.",
       path: "/services/enterprise-solutions",
-      features: ["ERP Systems", "CRM Solutions", "Business Intelligence"]
+      features: ["Custom Applications", "System Integration", "Data Analytics"]
     },
     {
       logo: itServices,
       title: "IT Services",
-      description: "Expert managed IT services for smooth and efficient technology operations.",
+      description: "Reliable managed IT services ensuring your technology infrastructure runs smoothly and efficiently at all times.",
       path: "/services/it-services",
-      features: ["24/7 Support", "Infrastructure Management", "Help Desk"]
+      features: ["Proactive Monitoring", "System Maintenance", "Technical Support"]
     },
     {
       logo: networkSolutions,
       title: "Network Solutions",
-      description: "Optimize network performance and security with our comprehensive network solutions.",
+      description: "Build robust, secure, and high-performance network infrastructures that support your business growth and connectivity needs.",
       path: "/services/network-solutions",
-      features: ["Network Design", "Performance Monitoring", "Security Implementation"]
+      features: ["Network Architecture", "Security Protocols", "Performance Optimization"]
     },
   ];
 
@@ -61,10 +61,10 @@ const ServicesGrid = () => {
       <div className="services-grid-container">
         <div className="services-grid-header">
           <span className="section-badge">OUR SERVICES</span>
-          <h2 className="section-title">What We Do</h2>
+          <h2 className="section-title">Comprehensive Technology Solutions</h2>
           <p className="section-description">
-            Transforming businesses through technology with comprehensive solutions 
-            tailored to your unique needs
+            Explore our range of specialized services designed to address your 
+            technology challenges and accelerate business growth
           </p>
         </div>
 
@@ -79,14 +79,14 @@ const ServicesGrid = () => {
                   <h3 className="card-title">{service.title}</h3>
                   <p className="card-description">{service.description}</p>
                   <div className="card-hover-indicator">
-                    <span>Hover for details</span>
+                    <span>Learn more</span>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                 </div>
                 <div className="card-back">
-                  <h4 className="back-title">Key Features</h4>
+                  <h4 className="back-title">What's Included</h4>
                   <ul className="features-list">
                     {service.features.map((feature, idx) => (
                       <li key={idx}>
@@ -101,7 +101,7 @@ const ServicesGrid = () => {
                     className="explore-btn"
                     onClick={() => navigate(service.path)}
                   >
-                    Explore Service
+                    View Details
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
