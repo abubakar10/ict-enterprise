@@ -125,7 +125,7 @@ const Header = () => {
                     About Us
                   </a>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <a 
                     className={`nav-link ${isActive('/careers') ? 'active' : ''}`} 
                     onClick={() => { navigate('/'); closeMenu() }} 
@@ -135,7 +135,7 @@ const Header = () => {
                   >
                     Careers
                   </a>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <a 
                     className={`nav-link  ${isActive('/contact') ? 'active' : ''}`} 
