@@ -19,10 +19,46 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Add your form submission logic here
+    
+    const formDataToSend = new FormData();
+    formDataToSend.append("name", formData.name);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("phone", formData.phone);
+    formDataToSend.append("subject", formData.subject);
+    formDataToSend.append("message", formData.message);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mqedbzrp", {
+        method: "POST",
+        body: formDataToSend,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        alert("Thank you! Your message has been sent successfully.");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: ""
+        });
+      } else {
+        const data = await response.json();
+        if (data.errors) {
+          alert("There was an error: " + data.errors.map(error => error.message).join(", "));
+        } else {
+          alert("There was an error submitting the form. Please try again.");
+        }
+      }
+    } catch (error) {
+      alert("There was an error submitting the form. Please try again.");
+      console.error("Form submission error:", error);
+    }
   };
 
   const contactInfo = [
@@ -52,7 +88,7 @@ const ContactForm = () => {
             <h2>Get in Touch</h2>
             <p>Fill out the form below and we'll get back to you within 24 hours.</p>
           </div>
-          <form onSubmit={handleSubmit} className="contact-form">
+          <form onSubmit={handleSubmit} className="contact-form" action="https://formspree.io/f/mqedbzrp" method="POST">
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="name">Full Name *</label>
