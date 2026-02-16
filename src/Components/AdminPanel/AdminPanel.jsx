@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useMsal } from '@azure/msal-react';
 import PostJob from './PostJob/PostJob';
 import JobList from './JobList/JobList';
 import './AdminPanel.scss';
@@ -24,7 +23,6 @@ const AdminPanel = () => {
   const [currentUser, setCurrentUser] = useState(null);
   
   const navigate = useNavigate();
-  const { instance } = useMsal();
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem('user'));
@@ -39,9 +37,6 @@ const AdminPanel = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
     localStorage.removeItem('email');
-    
-    // Clear MSAL cache silently (no popup for better UX)
-    instance.clearCache();
     
     // Navigate to login immediately with replace to prevent back navigation
     navigate('/login', { replace: true });
