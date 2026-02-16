@@ -1,5 +1,5 @@
 import React from 'react';
-import ictLogo from "../../assets/logos/ictLogo.png";
+import ictLogo from "../../assets/logos/ict-footer.png";
 import Twitter from "./../../assets/logos/Twitter.svg";
 import Facebook from "./../../assets/logos/Facebook.svg";
 import Instagram from "./../../assets/logos/Instagram.svg";

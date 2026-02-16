@@ -10,14 +10,14 @@ import Vision from './Components/Vision/Vision'
 import AboutUs from './Components/AboutUs/AboutUs'
 import Contact from './Components/Contact/Contact'
 //import Signup from './Components/Signup/Signup'
-import Login from './Components/Login/Login'
+// import Login from './Components/Login/Login'
 
-import Blog from './Components/Blog/Blog'
-import BlogDetail from './Components/Blog/BlogDetail'
-import AdminPanel from './Components/AdminPanel/AdminPanel'
-import BlogApproval from "./Components/AdminPanel/BlogApproval/BlogApproval";
-import AdminBlogDetail from "./Components/AdminPanel/BlogApproval/AdminBlogDetail";
-import AdminRoute from './Components/AdminPanel/AdminRoute'
+// import Blog from './Components/Blog/Blog'
+// import BlogDetail from './Components/Blog/BlogDetail'
+// import AdminPanel from './Components/AdminPanel/AdminPanel'
+// import BlogApproval from "./Components/AdminPanel/BlogApproval/BlogApproval";
+// import AdminBlogDetail from "./Components/AdminPanel/BlogApproval/AdminBlogDetail";
+// import AdminRoute from './Components/AdminPanel/AdminRoute'
 
 //Dropdowns
 import Cloud from './Components/Services-Dropdown/Cloud/Cloud'
@@ -26,8 +26,8 @@ import CyberSecurity from './Components/Services-Dropdown/CyberSecurity/CyberSec
 import Enterprise from './Components/Services-Dropdown/Enterprise-Solutions/Enterprise'
 import ITServices from './Components/Services-Dropdown/IT-Services/ITServices'
 import Network from './Components/Services-Dropdown/Network-Solutions/Network'
-import Careers from './Components/Careers/Careers'
-import ApplyJob from './Components/Careers/ApplyJob/ApplyJob'
+// import Careers from './Components/Careers/Careers'
+// import ApplyJob from './Components/Careers/ApplyJob/ApplyJob'
 
 function App() {
   const location = useLocation()
@@ -51,12 +51,12 @@ function App() {
         <Route path="/vision-mission" element={<Vision />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/careers" element={<Careers />} />
-        <Route path="/apply" element={<ApplyJob />} />
+        {/* <Route path="/careers" element={<Careers />} />
+        <Route path="/apply" element={<ApplyJob />} /> */}
 
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/login" element={<Login />} /> */}
         {/*<Route path="/signup" element={<Signup />} />*/}
-        <Route path="/blog" element={<Blog />} />
+        {/* <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetail />} />
         <Route
           path="/admin"
@@ -65,8 +65,8 @@ function App() {
               <AdminPanel />
             </AdminRoute>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/admin/blogs"
           element={
             <AdminRoute>
@@ -81,7 +81,7 @@ function App() {
               <AdminBlogDetail />
             </AdminRoute>
           }
-        />
+        /> */}
 
 
       </Routes>
