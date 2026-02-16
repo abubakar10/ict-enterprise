@@ -106,9 +106,7 @@ const Header = () => {
                 <li className="nav-item">
                   <a 
                     className={`nav-link ${isActive('/blog') ? 'active' : ''}`} 
-                     onClick={() => { navigate('/blog'); closeMenu() }} 
-                    // onClick={() => { navigate('/'); closeMenu() }} 
-
+                    onClick={() => { navigate('/blog'); closeMenu() }} 
                     style={{ cursor: 'pointer' }}
                   >
                     Blogs

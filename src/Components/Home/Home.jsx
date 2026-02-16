@@ -6,7 +6,6 @@ import HomeSolutions from './HomeSolutions/HomeSolutions'
 // import HomeStats from './HomeStats/HomeStats'
 import HomePartners from './HomePartners/HomePartners'
 import HomeTestimonials from './HomeTestimonials/HomeTestimonials'
-import Blog from '../Home/Blog/HomeBlog'
 
 
 const Home = () => {
@@ -19,8 +18,6 @@ const Home = () => {
       {/* <HomeStats /> */}
       <HomePartners />
       <HomeTestimonials />
-      <Blog />
-    
     </>
   )
 }

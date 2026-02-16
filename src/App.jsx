@@ -9,14 +9,12 @@ import Services from './Components/Services/Services'
 import Vision from './Components/Vision/Vision'
 import AboutUs from './Components/AboutUs/AboutUs'
 import Contact from './Components/Contact/Contact'
+import Blog from './Components/Blog/Blog'
+import BlogDetail from './Components/Blog/BlogDetail'
 //import Signup from './Components/Signup/Signup'
 // import Login from './Components/Login/Login'
 
-// import Blog from './Components/Blog/Blog'
-// import BlogDetail from './Components/Blog/BlogDetail'
 // import AdminPanel from './Components/AdminPanel/AdminPanel'
-// import BlogApproval from "./Components/AdminPanel/BlogApproval/BlogApproval";
-// import AdminBlogDetail from "./Components/AdminPanel/BlogApproval/AdminBlogDetail";
 // import AdminRoute from './Components/AdminPanel/AdminRoute'
 
 //Dropdowns
@@ -49,6 +47,8 @@ function App() {
         <Route path="/services/it-services" element={<ITServices />} />
         <Route path="/services/network-solutions" element={<Network />} />
         <Route path="/vision-mission" element={<Vision />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogDetail />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         {/* <Route path="/careers" element={<Careers />} />
@@ -56,29 +56,11 @@ function App() {
 
         {/* <Route path="/login" element={<Login />} /> */}
         {/*<Route path="/signup" element={<Signup />} />*/}
-        {/* <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<BlogDetail />} />
-        <Route
+        {/* <Route
           path="/admin"
           element={
             <AdminRoute>
               <AdminPanel />
-            </AdminRoute>
-          }
-        /> */}
-        {/* <Route
-          path="/admin/blogs"
-          element={
-            <AdminRoute>
-              <BlogApproval />
-            </AdminRoute>
-          }
-        />
-        <Route
-          path="/admin/blog/:id"
-          element={
-            <AdminRoute>
-              <AdminBlogDetail />
             </AdminRoute>
           }
         /> */}

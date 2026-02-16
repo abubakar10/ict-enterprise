@@ -4,7 +4,6 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import authRoutes from './routes/authRoutes.js'
 import jobRoutes from './routes/jobRoutes.js'
-import blogRoutes from './routes/blogRoutes.js'
 import adminRoutes from './routes/adminRoutes.js'
 import jobsRoutes from './routes/jobs.js';
 
@@ -20,7 +19,6 @@ app.use(express.json())
 // Routes
 app.use('/api/auth', authRoutes)
 app.use('/api/jobs', jobRoutes)
-app.use('/api/blogs', blogRoutes)
 app.use('/api/admin', adminRoutes)
 app.use('/api/jobsAdd', jobsRoutes);
 

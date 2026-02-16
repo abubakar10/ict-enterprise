@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { useMsal } from '@azure/msal-react';
 import PostJob from './PostJob/PostJob';
 import JobList from './JobList/JobList';
-import BlogApproval from './BlogApproval/BlogApproval';
-import AdminBlogDetail from './BlogApproval/AdminBlogDetail';
 import './AdminPanel.scss';
 import axios from 'axios';
 import { API_URL } from '../../config/apiConfig';
@@ -12,7 +10,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faAddressCard, 
   faList, 
-  faBlog, 
   faArrowRightFromBracket, 
   faUsers 
 } from '@fortawesome/free-solid-svg-icons';
@@ -110,15 +107,6 @@ const AdminPanel = () => {
           </button>
 
           <button
-            className={`nav-item ${activeTab === 'blog-approval' ? 'active' : ''}`}
-            utilisée
-            onClick={() => setActiveTab('blog-approval')}
-          >
-            <span className="nav-icon"><FontAwesomeIcon icon={faBlog} /></span>
-            <span className="nav-text">Blog Approval</span>
-          </button>
-
-          <button
             className={`nav-item ${activeTab === 'add-admin' ? 'active' : ''}`}
             onClick={() => setActiveTab('add-admin')}
           >
@@ -138,7 +126,6 @@ const AdminPanel = () => {
       <div className="admin-content">
         {activeTab === 'post-job' && <PostJob />}
         {activeTab === 'job-list' && <JobList />}
-        {activeTab === 'blog-approval' && <BlogApproval />}
         
         {activeTab === 'add-admin' && (
           <div className="add-admin-form">
