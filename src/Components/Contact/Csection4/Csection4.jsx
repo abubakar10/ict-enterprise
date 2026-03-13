@@ -24,7 +24,7 @@ const Csection4 = () => {
     },
     {
       city: "Islamabad",
-      address: "Office # 14, Ground Floor, Malik Plaza, F-8 Markaz, Islamabad",
+      address: "Office No.1, Ground Floor, MBC Plaza, Sector I, Bahria Enclave, Islamabad, Pakistan. Postal Code: 44000",
       phone: "+92 51 2744956",
       fax: "+92 21 34554818",
       uan: "+92 21 111-482-711",

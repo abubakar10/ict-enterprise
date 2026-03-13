@@ -58,7 +58,8 @@ const Footer = () => {
         {/* Head Office Info */}
         <div className="info-section">
           <h3>Head Office</h3>
-          <p className="head-para">Blue Area Islamabad, Pakistan</p>
+          <p className="head-para">Office No.1, Ground Floor, MBC Plaza, Sector I, Bahria Enclave, Islamabad, Pakistan</p>
+          <p className="head-para">Postal Code: 44000</p>
           <p className="head-para">
             <a href="mailto:info@ictsolutions.com.pk">info@ictsolutions.com.pk</a>
           </p>

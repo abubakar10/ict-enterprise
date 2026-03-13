@@ -65,7 +65,7 @@ const ContactForm = () => {
     {
       icon: faMapMarkerAlt,
       title: "Visit Us",
-      description: "Blue Area Islamabad, Pakistan"
+      description: "Office No.1, Ground Floor, MBC Plaza, Sector I, Bahria Enclave, Islamabad, Pakistan\nPostal Code: 44000"
     },
     {
       icon: faEnvelope,

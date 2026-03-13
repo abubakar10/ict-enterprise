@@ -19,7 +19,7 @@ const ContactMap = () => {
     // },
     {
       city: "Islamabad",
-      address: "Blue Area, Islamabad",
+      address: "Office No.1, Ground Floor, MBC Plaza, Sector I, Bahria Enclave, Islamabad, Pakistan. Postal Code: 44000",
       phone: "+92 12345678",
       email: "info@ictsolutions.com.pk"
     }

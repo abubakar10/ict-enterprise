@@ -36,7 +36,7 @@ const ContactHero = () => {
             <div className="quick-icon">📍</div>
             <div className="quick-content">
               <div className="quick-label">Location</div>
-              <div className="quick-value">Blue Area, Islamabad</div>
+              <div className="quick-value">Office No.1, Ground Floor, MBC Plaza, Sector I, Bahria Enclave, Islamabad, Pakistan. Postal Code: 44000</div>
             </div>
           </div>
         </div>
